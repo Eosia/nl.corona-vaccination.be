@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Corona-vaccination | Globale kaart{% endblock %}
+
+{% block body %}
+    <div class="container-fluid my-5 mx-0">
+
+
+        <div class="row mx-auto">
+
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
+
+                <h3 class="mx-auto text-center text-uppercase text-black">
+                    Globale kaart van vaccinatiecentra in België
+                </h3>
+
+            </div>
+
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto my-5">
+
+                <iframe class="global-map mx-auto rounded"
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1jNSop6SPHL1q2tzlvMDXnK_T67Qdvqto&ll=50.521185448174755%2C4.4060838651710155&z=8">
+
+                </iframe>
+
+            </div>
+
+        </div>
+
+        <!--bouton de retour start-->
+        <div class="mx-auto text-center col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-5">
+            <div class="btn-cta mx-auto my-1 text-center">
+                <a href="{{ path('home') }}" class="link btn btn-outline-primary btn-lg mx-auto text-center col-12 col-sm-11 col-md-10 col-lg-6 col-xl-4 text-uppercase mb-5">
+                    Terug naar de startpagina
+                </a>
+            </div>
+        </div>
+        <!--bouton de retour stop-->
+
+
+    </div>
+{% endblock %}
